@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ophix-dbengine-mariadb"
+version = "2026.09.29.01"
+description = "MariaDB/MySQL database driver plugin for Ophix Project Servers"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    { name = "Ophix Project" }
+]
+keywords = ["django", "ophix", "mariadb", "mysql", "database"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Intended Audience :: System Administrators",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Database :: Front-Ends",
+    "Topic :: System :: Systems Administration",
+]
+dependencies = [
+    "ophix-server-base>=2026.09.29.01",
+    "mysqlclient>=2.1",
+]
+
+[project.urls]
+Homepage = "https://ophix.io"
+Documentation = "https://github.com/ophixproject/ophix-dbengine-mariadb#readme"
+Source = "https://github.com/ophixproject/ophix-dbengine-mariadb"
+
+[project.entry-points."ophix.plugins"]
+ophix_dbengine_mariadb = "ophix_dbengine_mariadb"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"ophix_dbengine_mariadb" = [
+    "OPHIX_RELEASE_NOTES.md",
+    "deploy_templates/**/*",
+]
