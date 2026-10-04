@@ -1,5 +1,11 @@
 # Ophix Dbengine Mariadb Release Notes
 
+## 2026.10.04.01
+
+- Reworked `README.md`'s opening with a hook-first pitch (Ophix's recommended default for
+  operators who don't have a database opinion yet, one install away), as part of the
+  16-package taskserver-release-wave README overhaul.
+
 ## 2026.09.29.01
 
 - Initial release. Split out of `ophix-server-base`, where `mysqlclient` was

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ophix-dbengine-mariadb"
-version = "2026.09.29.01"
+version = "2026.10.04.01"
 description = "MariaDB/MySQL database driver plugin for Ophix Project Servers"
 readme = "README.md"
 requires-python = ">=3.10"
